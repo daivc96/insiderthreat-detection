@@ -2,7 +2,7 @@
 # Use descriptive variable names for source and target folders
 SOURCE_PATH="12841247/r1"
 REDUCED_PATH="12841247/r1/reduced"
-TARGET_PATH="baseline-data/scenario2-processing"
+TARGET_PATH="data/scenario2-processing"
 # Exit on error and undefined variables
 set -eu
 # Create target folder if it does not exist

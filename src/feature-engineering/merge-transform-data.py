@@ -4,8 +4,8 @@ import pandas as pd
 import datetime
 
 # Define the file names
-file1 = "baseline-data/scenario2-processing/scenario2-truenegative-data.csv"
-file2 = "baseline-data/scenario2-processing/scenario2-truepositive-data.csv"
+file1 = "data/scenario2-processing/scenario2-truenegative-data.csv"
+file2 = "data/scenario2-processing/scenario2-truepositive-data.csv"
 
 # Define the column names
 columns = ["vector", "id", "date", "user", "source", "action"]
@@ -29,7 +29,7 @@ df["vector"] = df["vector"].replace({"http": 0, "email": 1, "device": 2, "logon"
 
 df = df [ ["insiderthreat", "vector", "date", "user", "source", "action"]]
 # # Save the result to a new CSV file
-# df.to_csv("baseline-data/scenario2-processing/combined-transformed.csv", index=False)
+# df.to_csv("data/scenario2-processing/combined-transformed.csv", index=False)
 
 df["user"] = df["user"].astype('category')
 df["source"] = df["source"].astype('category')
@@ -54,4 +54,4 @@ print(df.head())
 print(df.info())
 
 #save df cleaned up
-df.to_csv('baseline-data/scenario2-output/df-export-int-cleaned.csv')
+df.to_csv('data/scenario2-output/df-export-int-cleaned.csv')

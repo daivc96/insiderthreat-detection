@@ -3,7 +3,7 @@
 IFS=';'
 # Use relative paths or variables for source and target folders
 SOURCE_PATH="12841247/answers"
-TARGET_PATH="baseline-data/scenario2-input"
+TARGET_PATH="data/scenario2-input"
 # Create target folder if it does not exist
 mkdir -p "$TARGET_PATH"
 # Exit on error and undefined variables
