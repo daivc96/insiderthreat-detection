@@ -4,7 +4,7 @@ This project aims to detect insider threats in an organization using machine lea
 
 ## Data
 
-The data used for this project is the [CERT synthetic dataset], which is a realistic simulation of insider threat scenarios. The dataset contains various types of data collected from a fictitious company, such as email, file, device, HTTP, logon, and psychometric data. The dataset also provides ground truth labels for the malicious users and their actions.
+The data used for this project is the CERT synthetic dataset, which is a realistic simulation of insider threat scenarios. The dataset contains various types of data collected from a fictitious company, such as email, file, device, HTTP, logon, and psychometric data. The dataset also provides ground truth labels for the malicious users and their actions.
 
 ## Methodology
 
@@ -19,13 +19,9 @@ The methodology of this project consists of four main steps:
 
 The results of this project show that machine learning techniques can effectively detect insider threats in an organization based on user behavior data. The best performing model is the LSTM model, which achieves an accuracy of 0.97, a precision of 0.95, a recall of 0.96, an F1-score of 0.96, and an AUC score of 0.99. The LSTM model can capture the temporal and sequential patterns of user actions and identify anomalous or suspicious behavior.
 
-## Presentation
-
-You can find the presentation slides for this project [here], which provide more details and insights about the data analysis and modeling process.
-
 ## Requirements
 
-To run this project, you need to install the following dependencies:
+To run this project, the following dependencies need installed:
 
 - Python 3.8 or higher
 - scikit-learn
@@ -35,7 +31,7 @@ To run this project, you need to install the following dependencies:
 - matplotlib
 - seaborn
 
-You can install them using the command:
+Installation command:
 
 `pip install -r requirements.txt`
 
