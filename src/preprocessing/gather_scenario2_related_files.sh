@@ -2,7 +2,7 @@
 # Set the input field separator to semicolon
 IFS=';'
 # Use relative paths or variables for source and target folders
-SOURCE_PATH="12841247/answers"
+SOURCE_PATH="cert-12841247/answers"
 TARGET_PATH="data/scenario2-input"
 # Create target folder if it does not exist
 mkdir -p "$TARGET_PATH"

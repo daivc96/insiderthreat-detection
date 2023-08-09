@@ -3,7 +3,7 @@
 
 # Files operations with Bash scripts
 # Gather scenario 2 related files
-sh "gather-scenario2-related-files.sh"
+sh "gather_scenario2_related_files.sh"
 # Check exit status and handle errors
 if [ $? -ne 0 ]; then
   echo "Error: failed to gather scenario 2 related files"
