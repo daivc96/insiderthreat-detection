@@ -37,14 +37,13 @@ Installation command:
 
 ## Usage
 
-To run this project, you need to execute the main.py file using the command:
+To run this project, execute below commands at root path
 
 ### Preprocessing
 `bash src/preprocessing/main.sh`
 
 ### Feature Engineering
 `bash src/feature_engineering/main.sh`
-
 
 ### Model Training
 `bash src/feature_engineering/main.sh`
