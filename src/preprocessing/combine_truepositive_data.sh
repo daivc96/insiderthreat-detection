@@ -3,7 +3,7 @@
 
 # Define source and target paths
 SOURCE_PATH="data/scenario2_raw"
-TARGET_PATH="data/scenario2-processed/scenario2-truepositive-data.csv"
+TARGET_PATH="data/scenario2_processed/scenario2-truepositive-data.csv"
 
 # Concatenate files
 cat "$SOURCE_PATH"/*.csv > "$TARGET_PATH"

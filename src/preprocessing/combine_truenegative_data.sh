@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Use descriptive variable names for source and target folders
 SOURCE_PATH="cert-12841247/r1"
-REDUCED_PATH="data/scenario2-processed/r1/reduced"
-TARGET_PATH="data/scenario2-processed"
+REDUCED_PATH="data/scenario2_processed/r1/reduced"
+TARGET_PATH="data/scenario2_processed"
 # Exit on error and undefined variables
 set -eu
 # Create target folder if it does not exist
