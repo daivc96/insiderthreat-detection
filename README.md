@@ -6,19 +6,6 @@ This project aims to detect insider threats in an organization using machine lea
 
 The data used for this project is the CERT synthetic dataset, which is a realistic simulation of insider threat scenarios. The dataset contains various types of data collected from a fictitious company, such as email, file, device, HTTP, logon, and psychometric data. The dataset also provides ground truth labels for the malicious users and their actions.
 
-## Methodology
-
-The methodology of this project consists of four main steps:
-
-- Data preprocessing: This step involves cleaning, filtering, and transforming the raw data into a suitable format for analysis and modeling. This includes handling missing values, outliers, and imbalanced classes.
-- Feature engineering: This step involves extracting and selecting relevant features from the preprocessed data using various statistical methods and domain knowledge. This also includes reducing dimensionality and creating new features based on existing ones.
-- Model training: This step involves building and training machine learning models to classify users as malicious or benign based on their behavior patterns. This includes using different techniques, such as random forest, XGBoost, and LSTM.
-- Model evaluation: This step involves evaluating the performance of the trained models using various metrics, such as accuracy, precision, recall, F1-score, ROC curve, and AUC score. This also includes comparing the results of different models and discussing the advantages and limitations of each approach.
-
-## Results
-
-The results of this project show that machine learning techniques can effectively detect insider threats in an organization based on user behavior data. The best performing model is the LSTM model, which achieves an accuracy of 0.97, a precision of 0.95, a recall of 0.96, an F1-score of 0.96, and an AUC score of 0.99. The LSTM model can capture the temporal and sequential patterns of user actions and identify anomalous or suspicious behavior.
-
 ## Requirements
 
 To run this project, the following dependencies need installed:
