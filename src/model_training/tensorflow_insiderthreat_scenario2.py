@@ -6,7 +6,7 @@ from tensorflow.keras import layers
 from sklearn.model_selection import train_test_split
 from pandas.api.types import CategoricalDtype
 
-file = "data/scenario2-output/df-export-int-cleaned.csv"
+file = "data/scenario2_processed/df-export-int-cleaned.csv"
 
 # Read the CSV files
 dataframe = pd.read_csv(file)

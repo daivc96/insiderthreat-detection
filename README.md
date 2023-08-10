@@ -40,7 +40,11 @@ Installation command:
 To run this project, you need to execute the main.py file using the command:
 
 ### Preprocessing
-`bash src/preprocessing/preprocessing_main.sh`
+`bash src/preprocessing/main.sh`
 
-### Preprocessing
-`bash src/preprocessing/preprocessing_main.sh `
+### Feature Engineering
+`bash src/feature_engineering/main.sh`
+
+
+### Model Training
+`bash src/feature_engineering/main.sh`
