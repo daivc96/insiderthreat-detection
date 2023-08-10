@@ -2,6 +2,12 @@
 
 This project aims to simulate the tutorial named "Insider Threat Detection with AI Using Tensorflow and RepidMiner Studio"
 
+## Repo Structure
+
+- data: all data used for scenario 2 insider threat detection, including all true positive and true negative data
+- src: bash scripts and Python scripts used for all phases of AI cycle including preprocessing, feature engineering and model training
+- results: all results proving the project works
+
 ## Tools Setup
 
 - Download the datasets from website: https://kilthub.cmu.edu/articles/dataset/Insider_Threat_Test_Dataset/12841247/1
