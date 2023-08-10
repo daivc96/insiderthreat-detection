@@ -46,7 +46,7 @@ df["action_cat"] = df["action"].cat.codes
 # print(df.head())
 
 # save df with new columns for future datmapping
-df.to_csv('df-export-allcolumns.csv')
+df.to_csv('data/scenario2_processed/df-export-allcolumns.csv')
 
 # remove old columns
 del df["user"]
