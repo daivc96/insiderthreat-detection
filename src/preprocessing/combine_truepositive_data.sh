@@ -2,8 +2,8 @@
 # This script concatenates all the csv files in the source path and writes them to the target path
 
 # Define source and target paths
-SOURCE_PATH="data/scenario2-input"
-TARGET_PATH="data/scenario2-processing/scenario2-truepositive-data.csv"
+SOURCE_PATH="data/scenario2_raw"
+TARGET_PATH="data/scenario2-processed/scenario2-truepositive-data.csv"
 
 # Concatenate files
 cat "$SOURCE_PATH"/*.csv > "$TARGET_PATH"

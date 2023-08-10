@@ -39,6 +39,8 @@ Installation command:
 
 To run this project, you need to execute the main.py file using the command:
 
-`python main.py`
+### Preprocessing
+`bash src/preprocessing/preprocessing_main.sh`
 
-This will run the entire pipeline from data preprocessing to model evaluation and display the results in the console.
+### Preprocessing
+`bash src/preprocessing/preprocessing_main.sh `
