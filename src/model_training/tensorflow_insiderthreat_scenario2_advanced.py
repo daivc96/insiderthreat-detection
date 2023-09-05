@@ -18,7 +18,7 @@ print(len(train), 'train examples')
 print(len(val), 'validation examples')
 print(len(test), 'test examples')
 
-num_samples = len(train)
+# num_samples = len(train)
 
 # Create an input pipeline using tf.data
 # A utility method to create a tf.data dataset from a Pandas Dataframe
@@ -48,6 +48,8 @@ batch_size = 32
 train_ds = df_to_dataset(train, batch_size=batch_size)
 val_ds = df_to_dataset(val, shuffle=False, batch_size=batch_size)
 test_ds = df_to_dataset(test, shuffle=False, batch_size=batch_size)
+
+num_samples = len(train_ds)
 
 # create compile and train model
 # model = tf.keras.Sequential([
