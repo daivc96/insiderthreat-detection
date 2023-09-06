@@ -51,22 +51,6 @@ test_ds = df_to_dataset(test, shuffle=False, batch_size=batch_size)
 
 num_samples = len(train_ds)
 
-# create compile and train model
-# model = tf.keras.Sequential([
-#     feature_layer,
-#     layers.Dense(128, activation='relu'),
-#     layers.Dense(128, activation='relu'),
-#     layers.Dense(1)
-# ])
-
-# model.compile(optimizer='adam',
-#               loss=tf.keras.losses.BinaryCrossentropy(from_logits=True),
-#               metrics=['accuracy'])
-
-# model.fit(train_ds,
-#           validation_data=val_ds,
-#           epochs=5)
-
 # Reshape data to be (num_samples, sqrt(num_features), sqrt(num_features), 1)
 # This is a square reshaping suitable for CNN
 sqrt_features = int(np.sqrt(num_features))
