@@ -30,7 +30,7 @@ def df_to_dataset(dataframe, shuffle=True, batch_size=32):
     ds = tf.data.Dataset.from_tensor_slices((dict(dataframe), labels))
     if shuffle:
         ds = ds.shuffle(buffer_size=len(dataframe))
-    ds = ds.batch(batch_size)
+    # ds = ds.batch(batch_size)
     return ds
 
 
@@ -39,16 +39,19 @@ feature_columns = []
 num_features = 5 #"vector", "date", "user", "source", "action"
 for header in ["vector", "date", "user", "source", "action"]:
     feature_columns.append(feature_column.numeric_column(header))
-
+print("a")
+print(feature_columns)
+print("b")
 # create feature layer
 feature_layer = tf.keras.layers.DenseFeatures(feature_columns)
 
 # set batch size pipeline
 batch_size = 32
-train_ds = df_to_dataset(train, batch_size=batch_size)
-val_ds = df_to_dataset(val, shuffle=False, batch_size=batch_size)
-test_ds = df_to_dataset(test, shuffle=False, batch_size=batch_size)
-num_samples = len(train_ds)
+# train_ds = df_to_dataset(train, shuffle=False, batch_size=batch_size)
+# val_ds = df_to_dataset(val, shuffle=False, batch_size=batch_size)
+# test_ds = df_to_dataset(test, shuffle=False, batch_size=batch_size)
+# num_samples = len(train_ds)
+train_ds = train
 
 print(train_ds)
 # Reshape data to be (num_samples, sqrt(num_features), sqrt(num_features), 1)
