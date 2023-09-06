@@ -2,4 +2,4 @@
 
 HOME_PATH="src/model_training"
 
-python3 $HOME_PATH/tensorflow_insiderthreat_scenario2.py
+python3 $HOME_PATH/tensorflow_insiderthreat_scenario2_advanced.py

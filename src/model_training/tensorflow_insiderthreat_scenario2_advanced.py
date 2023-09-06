@@ -48,9 +48,9 @@ batch_size = 32
 train_ds = df_to_dataset(train, batch_size=batch_size)
 val_ds = df_to_dataset(val, shuffle=False, batch_size=batch_size)
 test_ds = df_to_dataset(test, shuffle=False, batch_size=batch_size)
-
 num_samples = len(train_ds)
 
+print(train_ds)
 # Reshape data to be (num_samples, sqrt(num_features), sqrt(num_features), 1)
 # This is a square reshaping suitable for CNN
 sqrt_features = int(np.sqrt(num_features))

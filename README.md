@@ -30,4 +30,4 @@ To run this project, execute below commands at root path
 `bash src/feature_engineering/main.sh`
 
 ### Model Training
-`bash src/feature_engineering/main.sh`
+`bash src/model_training/main.sh`
