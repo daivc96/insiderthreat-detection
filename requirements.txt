@@ -4,3 +4,8 @@ tensorflow
 sklearn
 matplotlib
 seaborn
+gensim
+nltk
+
+#python3 -m nltk.downloader wordnet  
+#python3 -m nltk.downloader stopwords
