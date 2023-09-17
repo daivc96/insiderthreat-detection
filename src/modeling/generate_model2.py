@@ -19,8 +19,8 @@ def preprocess(text):
     # Get the list of stopwords for English
     stopwords = nltk.corpus.stopwords.words("english")
 
-    # Add any custom stopwords that you want
-    stopwords.extend(["custom", "word"])
+    # Add any custom stopwords 
+    # stopwords.extend(["custom", "word"])
 
     words = text.split()
     words = [word.lower() for word in words if word.isalpha() and word not in stopwords]
@@ -45,7 +45,7 @@ alpha = 1
 # Build the LDA model using gensim
 lda_model = LdaModel(corpus=corpus, id2word=dictionary, num_topics=num_topics, alpha=alpha, random_state=42)
 
-# Print the topics and the top 10 words for each topic
+# To preview, print the topics and the top 10 words for each topic
 topics = lda_model.print_topics(num_words=10)
 for topic in topics:
     print(topic)
