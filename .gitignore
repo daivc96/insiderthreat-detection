@@ -1,0 +1,5 @@
+*.csv
+.gitignore
+insider-threat-detection/data/.DS_Store
+insider-threat-detection/data/raw/answers/.DS_Store
+.DS_Store
