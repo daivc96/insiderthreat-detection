@@ -84,6 +84,7 @@ final_df["target"] = final_df["target"].fillna(0)
 final_df.to_csv(
     "../../data/model_data/2_ua_modeling_on_email_content.csv", index=False)
 # Print a confirmation message
+print(final_df.head())
 print("The dataframe has been saved to csv file.")
 
 end_time=time.time()

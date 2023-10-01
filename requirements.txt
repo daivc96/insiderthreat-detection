@@ -6,6 +6,6 @@ matplotlib
 seaborn
 gensim
 nltk
-
+networkx
 #python3 -m nltk.downloader wordnet  
 #python3 -m nltk.downloader stopwords

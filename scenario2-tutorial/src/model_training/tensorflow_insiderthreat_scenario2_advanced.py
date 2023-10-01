@@ -39,9 +39,9 @@ feature_columns = []
 num_features = 5 #"vector", "date", "user", "source", "action"
 for header in ["vector", "date", "user", "source", "action"]:
     feature_columns.append(feature_column.numeric_column(header))
-print("a")
+
 print(feature_columns)
-print("b")
+
 # create feature layer
 feature_layer = tf.keras.layers.DenseFeatures(feature_columns)
 
