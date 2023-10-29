@@ -1,0 +1,10 @@
+# User Behavior Data Analysis and Anomaly Detection
+
+This part aims to analyze and detect anomalies in user behavior data from a simulated organization. The data consists of several csv files that contain information about the users' logon, device, file, web, email, and ldap activities. The part involves the following tasks:
+
+- **Data Processing**: Using Python and pandas library, read and manipulate the csv files to calculate different fields related to the user behavior data, such as numlogonDay, numlogoffNight, numWebAccDay, numEmailSentwithAttachNight, etc. The code for this task is in the `data_processing.py` file.
+- **Data Separation**: Using Python and pandas library, separate the output csv file from the previous task by selected variables for each role, such as Electrical Engineer, IT Admin, and Salesman. The code for this task is in the `data_separation.py` file.
+- **Data Enrichment**: Using Python and pandas library, enrich the output csv file from the previous task with more information from the psychometric.csv and ldap.csv files, which contain information about the users' personality traits, roles, and organizational units. The code for this task is in the `data_enrichment.py` file.
+- **Anomaly Detection**: Using Python and scipy.stats library, detect anomalies in user behavior data using the univariate Gaussian distribution. For each variable, estimate the mean and standard deviation of the Gaussian distribution, and define the rejection region based on the significance level α = 0.1. Then, check if any abnormal activity is located in the rejection region. If so, include the variable as an input variable for further anomaly detection modeling. The code for this task is in the `anomaly_detection.py` file.
+
+The final output of this part is a csv file that shows all the fields that are relevant for anomaly detection modeling for each record in all the tables. This file can be used for further analysis or modeling.
