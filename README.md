@@ -31,3 +31,5 @@ To run this project, execute below commands at root path
 
 ### Model Training
 `bash src/model_training/main.sh`
+
+update to check the activeness
