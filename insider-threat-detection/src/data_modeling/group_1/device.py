@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read the device.csv file
-device = pd.read_csv("device.csv")
+device = pd.read_csv("device_truncated.csv")
 
 # Convert the date column to datetime format
 device["date"] = pd.to_datetime(device["date"])
@@ -19,7 +19,7 @@ device["daynight"] = device["date"].dt.hour.isin(range(8, 18)).astype(int)
 device["connection"] = device["activity"].map({"Connect": 1, "Disconnect": -1}).fillna(0).astype(int)
 
 # Read the file.csv file
-file = pd.read_csv("file.csv")
+file = pd.read_csv("file_truncated.csv")
 
 # Convert the date column to datetime format
 file["date"] = pd.to_datetime(file["date"])

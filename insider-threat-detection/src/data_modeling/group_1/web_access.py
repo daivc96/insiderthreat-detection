@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read the http.csv file
-http = pd.read_csv("http.csv")
+http = pd.read_csv("http_truncated.csv")
 
 # Convert the date column to datetime format
 http["date"] = pd.to_datetime(http["date"])
