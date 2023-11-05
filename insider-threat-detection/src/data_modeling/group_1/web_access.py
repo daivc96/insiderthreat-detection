@@ -9,8 +9,8 @@ http["date"] = pd.to_datetime(http["date"])
 # Extract the user, date, pc, url columns
 http = http[["user", "date", "pc", "url"]]
 
-# Create a column for working day (1 if Monday to Friday, 0 otherwise)
-http["workingday"] = http["date"].dt.dayofweek.isin([0, 1, 2, 3, 4]).astype(int)
+# # Create a column for working day (1 if Monday to Friday, 0 otherwise)
+# http["workingday"] = http["date"].dt.dayofweek.isin([0, 1, 2, 3, 4]).astype(int)
 
 # Create a column for day or night (1 if 8 AM to 6 PM, 0 otherwise)
 http["daynight"] = http["date"].dt.hour.isin(range(8, 18)).astype(int)
@@ -36,8 +36,7 @@ output = grouped.agg(
     numUploadDay = ("upload", lambda x: x[x > 0].sum()),
     numUploadNight = ("upload", lambda x: x[x > 0].sum()),
     numDownloadDay = ("download", lambda x: x[x > 0].sum()),
-    numDownloadNight = ("download", lambda x: x[x > 0].sum()),
-    workingday = ("workingday", "first")
+    numDownloadNight = ("download", lambda x: x[x > 0].sum())
 )
 
 # Reset the index
