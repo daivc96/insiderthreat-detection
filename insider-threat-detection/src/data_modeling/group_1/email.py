@@ -9,9 +9,6 @@ email["date"] = pd.to_datetime(email["date"])
 # Extract the user from email address columns
 email = email[["user", "date", "to", "cc", "bcc", "from", "size", "attachments", "content"]]
 
-# Create a column for working day (1 if Monday to Friday, 0 otherwise)
-email["workingday"] = email["date"].dt.dayofweek.isin([0, 1, 2, 3, 4]).astype(int)
-
 # Create a column for day or night (1 if 8 AM to 6 PM, 0 otherwise)
 email["daynight"] = email["date"].dt.hour.isin(range(8, 18)).astype(int)
 
@@ -48,8 +45,7 @@ output = grouped.agg(
     numdistinctRecipientsDay = ("recipients", lambda x: len(set(x.sum().split(",")))),
     numdistinctRecipientsNight = ("recipients", lambda x: len(set(x.sum().split(",")))),
     numinternalRecipientsDay = ("internal_recipients", "sum"),
-    numinternalRecipientsNight = ("internal_recipients", "sum"),
-    workingday = ("workingday", "first")
+    numinternalRecipientsNight = ("internal_recipients", "sum")
 )
 
 # Reset the index
