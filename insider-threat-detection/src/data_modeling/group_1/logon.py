@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read the logon.csv file
-logon = pd.read_csv("/Users/daivc/Documents/uit/Do an/Insider Threat/insiderthreat-detection/insider-threat-detection/data/raw/r6.2/logon.csv")
+logon = pd.read_csv("logon.csv")
 
 # Convert the date column to datetime format
 logon["date"] = pd.to_datetime(logon["date"])
@@ -32,8 +32,7 @@ output = grouped.agg(
     numPClogoffDay = ("pc", lambda x: x.nunique()),
     numPClogoffNight = ("pc", lambda x: x.nunique()),
     onoffNotsameDay = ("pc", lambda x: (x != x.shift()).sum()),
-    onoffNotsameNight = ("pc", lambda x: (x != x.shift()).sum()),
-    workingday = ("workingday", "first")
+    onoffNotsameNight = ("pc", lambda x: (x != x.shift()).sum())
 )
 
 # Reset the index
